@@ -1,10 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myonlineapp-svc
+  name: myjenkins-svc
   labels:
-     app: myonlineapp
-     version: 2.7.2
+     app: myjenkins-pod
 spec:
   type: NodePort
   ports:
@@ -12,5 +11,7 @@ spec:
     nodePort: 30001
     protocol: TCP
   selector:
-      app: myonlineapp
-      version: 2.7.2
+      app: myjenkins-pod
+       
+
+      
