@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: myonlineapp-container
-        image:  maha4iac/myonlineapp:2
+        image:  maha4iac/myonlineapp:1
         ports:
         - containerPort: 8080
